@@ -1,95 +1,158 @@
-🚀 BridgeX: The Unified Ecosystem for High-Potential Founders
+# FundMate – Startup & Investor Connector Platform
 
-An Intelligent Platform Connecting Underserved Entrepreneurs with Global Capital, Mentorship, and Market Opportunities
+## Overview
 
-🌍 The Problem: Systemic Isolation in Emerging Markets
+**FundMate** is a web platform designed to connect **startup founders with potential investors**.
+The system provides a digital space where entrepreneurs can present their business ideas and investors can explore promising opportunities to fund innovative projects.
 
-High-potential entrepreneurs across Africa face four interconnected barriers that restrict growth and lock them out of global innovation and investment ecosystems:
+The platform aims to simplify the early-stage funding process by enabling direct interaction between startups and investors.
 
-1. 💰 Limited Access to Funding
+---
 
-Lack of curated, stage-appropriate pathways to venture capital, angel investors, and grant opportunities.
+## Key Features
 
-2. 🤝 Weak Networks & Mentorship
+### For Startups
 
-Founders remain isolated from experienced mentors, established founders, and industry connections.
+* Create and manage startup profiles
+* Present business ideas and investment opportunities
+* Submit funding requests
+* Upload supporting documents
 
-3. 🖥️ Digital Skills Gap
+### For Investors
 
-Limited access to modern digital literacy, operational tools, and business building resources.
+* Browse available startup opportunities
+* Review startup profiles and proposals
+* Connect with startup founders
+* Evaluate investment opportunities
 
-4. 🌍 Market Access Barriers
+### Platform Features
 
-Low visibility and geographical constraints hinder entry into international markets and supply chains.
+* User authentication and account management
+* Startup and investor dashboards
+* Database-backed storage of proposals
+* Web interface for interaction between users
 
-💡 Our Solution: BridgeX — A Network Effect for Opportunity
+---
 
-BridgeX is a unified, AI-powered ecosystem designed to break down all four barriers simultaneously.
-The platform integrates funding, mentorship, community, and marketplace tools into a seamless experience.
+## Technologies Used
 
-Each module strengthens the others — creating a network effect that accelerates founder success.
+### Backend
 
-🔹 BridgeX Platform Modules & Strategic Value
-Module	Strategic Value
-Intelligent Funding Database	AI-curated matching between founders and global investors/grants based on sector, traction, and stage.
-Structured Mentorship Hub	Personalized mentor matching, progress tracking, and industry-aligned guidance.
-IP Protection (NDA Gate)	Built-in NDA signing workflow for secure sharing of business plans and pitch decks.
-Community & Marketplace	Showcase products, find collaborators, access gigs, and discover partnership opportunities.
-🔑 Traction & Business Model
+* Python
+* Django
+* SQLite (development database)
 
-BridgeX ensures long-term sustainability with three complementary revenue streams:
+### Frontend
 
-Revenue Stream	Description	Example
-Premium Investor Subscriptions	Investors pay for advanced analytics, filtering, and direct access to curated startups.	$500–$2K/month
-Featured Founder Listings	Optional upgrades for founders to boost visibility and highlight products/services.	300–1000 Birr/month
-Marketplace Commission (Future)	10% commission per completed gig or service in the community marketplace.	Recurring, scalable revenue
-✔ Current MVP Features Built
+* HTML
+* CSS
+* JavaScript
 
-NDA automation
+### Deployment
 
-Real-time chat
+* Gunicorn
+* Procfile configuration
+* Environment variables (.env)
 
-Role-based access control
+---
 
-Mentor matching algorithm
+## Project Structure
 
-Scalable backend prepared for 10x user growth
+```
+FundMate
+│
+├── backend/               # Backend application logic
+├── frontend/              # Frontend interface
+├── investor_app/          # Investor-related functionality
+├── jobs/                  # Job or opportunity related modules
+│
+├── app.py                 # Application entry point
+├── manage.py              # Django management script
+├── requirements.txt       # Project dependencies
+├── Procfile               # Deployment configuration
+├── runtime.txt            # Runtime environment specification
+├── .env                   # Environment variables
+├── db.sqlite3             # Development database
+└── README.md              # Project documentation
+```
 
-💻 Technical Foundation
+---
 
-Frontend: React
+## Installation and Setup
 
-Backend: Django
+### 1. Clone the repository
 
-Database: PostgreSQL
+```bash
+git clone https://github.com/Abby966/FundMate.git
+cd FundMate
+```
 
-Security: Role-based access, token authentication, encrypted document handling
+### 2. Create a virtual environment
 
-Architecture: Modular, scalable, and optimized for fast iteration
+```bash
+python -m venv venv
+```
 
-🗺️ Go-to-Market & Impact Strategy
-Launch Plan
+Activate the environment:
 
-Partner with innovation hubs, NGOs, and development organizations
+**Windows**
 
-Host startup workshops, pitch events, and hackathons in Addis Ababa, Bahir Dar, and Dire Dawa
+```bash
+venv\Scripts\activate
+```
 
-Build community ambassadors and university innovation clubs
+**Linux / Mac**
 
-Expected Impact
+```bash
+source venv/bin/activate
+```
 
-Increased access to funding
+### 3. Install dependencies
 
-Job creation and business growth
+```bash
+pip install -r requirements.txt
+```
 
-Reduction in digital skills inequality
+### 4. Run database migrations
 
-Stronger entrepreneurial ecosystems
+```bash
+python manage.py migrate
+```
 
-Breaking isolation through connected, empowered founders
+### 5. Run the development server
 
-🎯 Call to Action
+```bash
+python manage.py runserver
+```
 
-BridgeX is seeking strategic investors, mentors, and ecosystem partners to scale the platform across Africa and build a unified bridge to global opportunity.
+Open in browser:
 
-📧 Contact: abegailchanyalew6@gmail.com
+```
+http://127.0.0.1:8000
+```
+
+---
+
+## Future Improvements
+
+Possible future features include:
+
+* Real-time messaging between startups and investors
+* AI-based startup recommendation system for investors
+* Startup pitch evaluation tools
+* Payment and investment tracking system
+* Advanced analytics dashboard
+
+---
+
+## Project Goal
+
+The goal of **FundMate** is to help bridge the gap between **innovative entrepreneurs and potential investors**, making it easier for startups to access funding and for investors to discover promising ventures.
+
+---
+
+## Author
+
+**Abegail Chanyalew**
+Computer Science Student
+Interested in entrepreneurship, software systems, and technology-driven innovation platforms.
