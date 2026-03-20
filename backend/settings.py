@@ -10,7 +10,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY', default='django-insecure-z@pvlgcn_864&h%%pzr#1)uarj+r^b!^t89@3ft#he)0yb=&cs')
 DEBUG = config('DEBUG', default=False, cast=bool)  # Set False for production
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='bridgex.onrender.com').split(',')
+ALLOWED_HOSTS = ["*"]
 
 
 
@@ -24,13 +24,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'investor_app.apps.InvestorAppConfig',
+    'core.apps.CoreConfig',
     'rest_framework',
     'corsheaders',
     'rest_framework.authtoken',
 ]
 
-AUTH_USER_MODEL = 'investor_app.CustomUser'
+AUTH_USER_MODEL = 'core.CustomUser'
 
 # --------------------
 # Middleware
